@@ -1,7 +1,9 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+#hero {
+  height: 100vh;
 }
-a {
-  color: #00b7ff;
+#hero .avatar {
+  max-width: 100px;
+}
+#hero p.roles {
+  font-weight: 300;
 }
