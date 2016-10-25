@@ -1,9 +1,106 @@
+/*variables*/
+/*display toggles*/
+.hide {
+  display: none;
+}
+/*layout styling*/
+body {
+  box-sizing: border-box;
+  font-color: #212121;
+}
+a {
+  font-weight: 500;
+  color: #1976d2;
+}
+a:hover {
+  border-bottom: 2px solid #1976d2;
+}
+.strip {
+  position: absolute;
+  right: 0;
+  height: 105vh;
+  width: 8px;
+  background-color: #1976d2;
+}
+.fa {
+  color: #1976d2;
+}
+/*menu button styling*/
+#menu-btn {
+  z-index: 5;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+/*slide out menu styling*/
+ul#slide-out {
+  background-color: #1976d2;
+  display: inline-block;
+}
+ul#slide-out li {
+  max-width: 300px;
+  margin: 0 auto;
+}
+ul#slide-out a {
+  color: #fafafa;
+  font-size: 2.5em;
+  font-weight: 200;
+  line-height: 2em;
+  padding-bottom: 75px;
+}
+/*company template*/
+#company-info {
+  padding-top: 60px;
+}
+#company-info p {
+  margin: 0;
+}
+#company-info .description {
+  padding: 30px 0;
+  font-size: 1.25em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+/*hero page*/
 #hero {
+  z-index: 1;
   height: 100vh;
 }
 #hero .avatar {
-  max-width: 100px;
+  max-width: 160px;
+  margin: 0 auto;
+  padding: 0 0 20px 0;
+}
+#hero h5 {
+  font-weight: 300;
+}
+#hero h6 {
+  font-weight: 500;
+  font-style: italics;
 }
 #hero p.roles {
   font-weight: 300;
+}
+#hero ul.experience {
+  font-weight: 500;
+}
+#hero ul.experience li {
+  font-weight: 300;
+}
+/*footer template*/
+#footer {
+  background-color: #1976d2;
+  height: 110px;
+}
+#footer ul li {
+  padding-top: 18px;
+  display: inline;
+  color: #fafafa;
+}
+#footer ul li i {
+  font-size: 1.5em;
+  color: #fafafa;
+}
+#footer ul li a {
+  color: #fafafa;
 }
