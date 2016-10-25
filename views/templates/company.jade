@@ -1,0 +1,19 @@
+.row.center-align
+  .col.s12
+    #company-info
+      a(href="#{url}", target="_blank"): img(src="#{logo}", width="280px")
+      p.location= location
+      p.employed= employed
+      p.description= description
+.row.center-align
+  for thumb in thumbnails
+    .col.s4.center-align
+      img.materialboxed(src="#{thumb}", width="100%")
+.row.center-align
+  .col.s12
+    #job-info
+      for item in roles
+        h5= item.jobTitle
+        p= item.jobDescription
+        for detail in item.bullets
+          li= detail
