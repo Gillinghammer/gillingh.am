@@ -17,16 +17,8 @@ a
 a:hover
   border-bottom: 2px solid main-color
 
-.strip /*accent*/
-  position: absolute
-  right: 0
-  height: 105vh
-  width: 8px
-  background-color: main-color
-
 .fa /*font-awesome icon color*/
   color: main-color
-
 
 /*menu button styling*/
 #menu-btn
@@ -65,7 +57,7 @@ ul#slide-out
 /*hero page*/
 #hero
   z-index: 1
-  height: 100vh
+  padding: 100px 0
   .avatar
     max-width: 160px
     margin: 0 auto
@@ -82,14 +74,16 @@ ul#slide-out
     li
       font-weight: 300
 
-
 /*footer template*/
 #footer
   background-color: main-color
-  height: 110px
+  position: absolute
+  bottom: -10px
+  width: 100%
+  height: 150px
   ul
     li
-      padding-top: 18px
+      padding: 18px 0
       display: inline
       color: light-text
       i
