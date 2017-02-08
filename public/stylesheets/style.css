@@ -1,48 +1,9 @@
-html,body,.container {
-    height:100%;
+header {
+  padding-top: 200px;
 }
-.container {
-    display:table;
-    width: 100%;
-    padding: 0; /*set left/right padding according to needs*/
-    box-sizing: border-box;
-}
-
-.row {
-    height: 100%;
-    display: table-row;
-}
-
-.avatar {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.avatar > img {
-  max-width: 100px;
+img {
   border-radius: 200px;
 }
-
-.row .cell {
-  display: table-cell;
-  float: none;
-}
-
-.cell-1 {   
-  background-color: black;
-  width: 30%;
-}
-.cell-2 {
-  background: #e0e0e0; 
-  width: 70%;
-}
-
-@media (max-width:700px){
-  .cell-1 {
-      display: none !important;
-      width: 0%;
-    }
-  .cell-2 {
-    width: 100%;
-  }
+p {
+  color: #666;
 }
