@@ -49,7 +49,7 @@ span.x4:before, i.x4:before
 
 header .container-fluid
 {
-    background-image: url('https://unsplash.it/2560/1707?image=961');
+    background-image: url('../images/patagonia.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -105,7 +105,7 @@ header .container-fluid
 
 .number .container-fluid
 {
-    background-image: url('https://unsplash.it/3000/2000?image=685');
+    background-image: url('');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -144,7 +144,7 @@ header .container-fluid
 
 .story .container-fluid
 {
-    background-image: url('https://unsplash.it/3000/2000?image=531');
+    background-image: url('');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -162,7 +162,7 @@ header .container-fluid
       rgba(33, 37, 43, 0.6)
     ),
 
-    url(https://unsplash.it/4000/3000?image=528);
+    url();
 }
 
 .prefooter h1,
@@ -200,5 +200,26 @@ footer p
 
 .social
 {
-    padding-top: 50px;
+    padding-top: 0px;
+}
+.footerText {
+    padding-top: 15px;
+}
+
+.cornerTitle {
+    color: white;
+}
+.clients img {
+    margin: 0 auto;
+    max-height: 130px;
+    max-width: 250px;
+    padding-bottom: 20px;
+}
+
+img.tesla {
+    padding-top: 40px;
+}
+
+img.wirewax {
+    padding-top: 10px;
 }

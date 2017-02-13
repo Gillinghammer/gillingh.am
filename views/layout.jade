@@ -6,7 +6,7 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(name='description', content='')
     meta(name='author', content='')
-    title Mountain King - Bootstrap Template
+    title Colin Gillingham - Startup Consulting
     // Bootstrap core CSS
     link(href='bootstrap/css/theme.css', rel='stylesheet')
     // Custom styles for this template
@@ -32,25 +32,6 @@ html(lang='en')
       theme: 'default'
       };
   body
-    // Pushy Menu
-    nav.pushy.pushy-left
-      ul.list-unstyled
-        li
-          a(href='#home') Home
-        li
-          a(href='#feat') Features
-        li
-          a(href='#about') About me
-        li
-          a(href='#news') My Blog
-        li
-          a(href='#history') My History
-        li
-          a(href='#photos') Look my Photos
-        li
-          a(href='#contact') Get in Touch!
-        li
-          a(href='http://www.themeinthebox.com/ourtheme/mountain-king-bootstrap-template/', target='_blank') Download
     // Site Overlay
     .site-overlay
     header#home
@@ -60,188 +41,67 @@ html(lang='en')
           .row
             .col-md-3.col-xs-10
               a.thumbnail.logo(href='#')
-                img.img-responsive(src='images/your_logo.png', alt='')
-            .col-md-1.col-md-offset-8.col-xs-2.text-center
-              .menu-btn
-                span.hamburger
-                  i.fa.fa-bars
+                //- img.img-responsive(src='images/Colin.png', alt='')
+                h5.cornerTitle Colin Gillingham
           .jumbotron
             h1
-              small In the hall of the
+              strong Colin Gillingham
               br
-              strong Mountain King
+              small startup consultant
             p
-              | This is a simple hero unit, a simple jumbotron-style component for
+              | After seven years working in Silicon Valley, for startups like Tesla,
               br
-              | calling extra attention to featured content or information.
-            p
-              a.btn.btn-primary.btn-lg(href='#', role='button') Learn more
-              a.btn.btn-lg.btn-danger(target='_blank', href='http://www.themeinthebox.com/ourtheme/mountain-king-bootstrap-template/', role='button') Download
+              | I'm helping companies in Europe grow with tips and tricks learned in California.
+  section.clients.wow.fadeInUp(data-wow-delay='300ms')
+    .container
+      .row
+        .col-md-3
+          img.img-responsive.tesla(src='/images/tesla2.png')
+        .col-md-3
+          img.img-responsive.wirewax(src='/images/wirewax.jpg')
+        .col-md-3
+          img.img-responsive(src='/images/proleads.gif')
+        .col-md-3
+          img.img-responsive(src='/images/generalassembly.png')
+        .col-md-12
+          p.text-center 
+            a(target="blank", href="https://docs.google.com/document/d/15ZGG3uAaVv8O60cp0LJFtpToyQYCJSdka3OXl117xSY/edit?usp=sharing") download my resume / cv
     section#feat
       .container
         .row.features
           .col-md-4.text-center.wow.fadeInUp(data-wow-delay='100ms')
-            span.typcn.typcn-pencil.x3
-            h4 Consectetur Risus
+            span.typcn.typcn-chart-line.x4
+            h4 CRM Management
             p
-              | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+              | Selecting the right CRM software to use at your startup is essential for your teams to be successful. Once we've implemented this, I'll help you determine your business's KPI's and visualize them via dashboards and automated reports.
           .col-md-4.text-center.wow.fadeInUp(data-wow-delay='300ms')
-            span.typcn.typcn-camera-outline.x3
-            h4 Ultricies Aenean
+            span.typcn.typcn-tags.x4
+            h4 Sales Automation
             p
-              | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.
+              | Target your leads with extremely personalized communications allowing a very small or even non-existent sales team to close more deals and setup important meetings with prospects. 
           .col-md-4.text-center.wow.fadeInUp(data-wow-delay='500ms')
-            span.typcn.typcn-bookmark.x3
-            h4 Cras Sollicitudin
+            span.typcn.typcn-news.x4
+            h4 Marketing Automation
             p
-              | Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum.
-    section#about.number.wow.fadeInUp(data-wow-delay='300ms')
-      // change the image in style.css to the class .number .container-fluid [approximately row 102]
-      .container-fluid
-        .container
-          .row
-            .col-md-6.opaline.col-md-offset-6
-              .row
-                .col-md-offset-1.col-md-10
-                  h3 Ligula Mattis Ornare Ultricies
-                  h5 Pellentesque Cursus Amet Parturient Etiam
-                  p
-                    | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-              .row.text-center
-                // set the numbers in assets/js/scripts.js
-                .col-md-4.boxes.col-xs-6.col-xs-offset-3.col-lg-4.col-lg-offset-1.col-md-offset-1.col-sm-6.wow.fadeInUp
-                  h5 Ultricies
-                  h3.odometer.01 00000
-                .col-md-4.boxes.col-xs-6.col-xs-offset-3.col-lg-4.col-lg-offset-2.col-md-offset-2.col-sm-6.wow.fadeInUp(data-wow-delay='300ms')
-                  h5 Fermentum
-                  h3.odometer.02 00000
-    section#news.blog.wow.fadeInUp(data-wow-delay='300ms')
-      .container
-        .row
-          .col-md-7
-            h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            p
-              | Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod.
-            p
-              | Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue.
-            a.btn.btn-danger.btn-lg(href='#')
-              | Take a Look 
-              i.fa.fa-arrow-circle-o-right
-          .col-md-5
-            a(href='#')
-              img.img-responsive(src='https://unsplash.it/1200/1200?image=839', alt='')
-    section#history.story.wow.fadeInUp(data-wow-delay='300ms')
-      // change the image in style.css to the class .story .container-fluid [approximately row 141]
-      .container-fluid
-        .container
-          .row
-            .col-md-6.opaline
-              .row
-                .col-md-10.col-md-offset-1
-                  p.lead
-                    i
-                      | Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-                  p
-                    i
-                      | Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-                  h6.lead  – Fermentum Dapibus
-                  p
-                    small
-                      | Nibh Etiam Risus Bibendum
-                      br
-                      |         Nullam id dolor id nibh ultricies vehicula ut id elit.
-    section#photos.gallery.wow.fadeInUp(data-wow-delay='300ms')
-      .container
-        .row
-          .masonry.image-gallery
-            .grid-sizer
-            .gutter-sizer
-            .item.item-width2
-              a(href='https://unsplash.it/1000/600?image=529')
-                img(src='https://unsplash.it/600/300?image=529', alt='')
-            .item
-              a(href='https://unsplash.it/1000/600?image=523')
-                img(src='https://unsplash.it/320/776?image=523', alt='')
-            .item
-              a(href='https://unsplash.it/600/1000?image=503')
-                img(src='https://unsplash.it/500/800?image=503', alt='')
-            .item
-              a(href='https://unsplash.it/1000/600?image=505')
-                img(src='https://unsplash.it/400/400?image=505', alt='')
-            .item
-              a(href='https://unsplash.it/800/800?image=454')
-                img(src='https://unsplash.it/4403/2476?image=454', alt='')
-            .item
-              a(href='https://unsplash.it/800/800?image=515')
-                img(src='https://unsplash.it/585/439?image=515', alt='')
-            .item.item-width2
-              a(href='https://unsplash.it/1000/600?image=451')
-                img(src='https://unsplash.it/600/140?image=451', alt='')
-    section.clients.wow.fadeInUp(data-wow-delay='300ms')
-      .container
-        .row
-          .col-md-2
-            img.img-responsive(src='images/logo-sample-01.jpg')
-          .col-md-2
-            img.img-responsive(src='images/logo-sample-02.jpg')
-          .col-md-2
-            img.img-responsive(src='images/logo-sample-03.png')
-          .col-md-2
-            img.img-responsive(src='images/logo-sample-04.jpg')
-          .col-md-2
-            img.img-responsive(src='images/logo-sample-05.jpg')
-          .col-md-2
-            img.img-responsive(src='images/logo-sample-06.png')
-    section#contact.prefooter.wow.fadeInUp(data-wow-delay='300ms')
-      // change the image in style.css to the class .prefooter .container-fluid [approximately row 154]
-      .container-fluid
-        .container
-          .row
-            .col-md-8
-              h3
-                | Maecenas sed diam eget risus varius
-                br
-                |  blandit sit amet non magna.
-              p
-                | Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-              .row
-                .col-md-6
-                  input.form-control(type='text', placeholder='Your Email Here...')
-                  br
-                  button.btn.btn-danger(type='button') Submit Newsletter
-    footer
-      .container
-        .row
-          .col-md-8
-            h3 Your Logo
-            p
-              | © 2016 Your Company. Designed and Developed by 
-              a(target='_blank', href='http://www.themeinthebox.com') ThemeintheBox.com
-          .col-md-4
-            p.text-right.social
-              a(href='https://www.facebook.com/ThemeInTheBox/', target='_blank')
-                i.typcn.typcn-social-facebook-circular
-              a(href='https://twitter.com/ThemeintheBox', target='_blank')
-                i.typcn.typcn-social-twitter-circular
-              i.typcn.typcn-social-tumbler-circular
-              i.typcn.typcn-social-github-circular
-              i.typcn.typcn-social-dribbble-circular
-    //
-      Bootstrap core JavaScript
-      ==================================================
-    // Placed at the end of the document so the pages load faster
-    script(src='assets/js/jquery.min.js')
-    script(src='bootstrap/js/bootstrap.min.js')
-    script(src='https://netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/js/bootstrap-scrollspy.js')
-    // IE10 viewport hack for Surface/desktop Windows 8 bug
-    script(src='assets/js/ie10-viewport-bug-workaround.js')
-    script(src='http://masonry.desandro.com/masonry.pkgd.js')
-    script(src='assets/js/masonry.js')
-    script(src='assets/js/pushy.min.js')
-    script(src='assets/js/jquery.magnific-popup.min.js')
-    script(src='assets/js/wow.min.js')
-    script(src='assets/js/scripts.js')
-    script(src='assets/js/odometer.js')
+              | Keep leads warm and tip prospects over the edge with timely communications when certain behaviors in your site or app are identified. Keep your newsletters timely and personlized making your company seem larger than it is.
+    //- section#contact.prefooter.wow.fadeInUp(data-wow-delay='300ms')
+    //-   // change the image in style.css to the class .prefooter .container-fluid [approximately row 154]
+    //-   .container-fluid
+    //-     .container
+    //-       .row
+    //-         .col-md-8
+    //-           h3
+    //-             | Offering Free Advice in Lisboa
+    //-           p
+    //-             | My main objective right now is networking and getting the lay of the land.
+    //-             | Send me a message if you'd like to meet for an interesting chat over coffee or beer!
+    //-           .row
+    //-             .col-md-12
+    //-               input.form-control(type='text', placeholder='Email Address')
+    //-               br
+    //-               textarea.form-control(type='textarea', placeholder='Your Message...')
+    //-               br
+    //-               button.btn.btn-danger(type='button') Send Message
 //- doctype html
 //- html
 //-   head
