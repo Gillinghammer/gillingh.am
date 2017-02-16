@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
 router.post('/', handleSayHello );
 
 var gmailpass = process.env.GMAILPASS;
-console.log("your password from process.env.GMAILPASS is ", gmailpass);
+console.log("\n\nyour password from process.env.GMAILPASS is " + gmailpass);
 
 function handleSayHello(req, res) {
 
