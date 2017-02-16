@@ -104,18 +104,19 @@ html(lang='en')
         .container
           .row
             .col-md-8
-              h3
-                | Offering Free Advice in Lisboa
+              //- h3
+              //-   | Offering Free Advice in Lisboa
               p
                 | Give me a shout, if you'd like to learn more. Happy to meet in Lisbon and chat over a coffee or beer!
-              .row
-                .col-md-12
-                  form(action="/", method="post")
-                    input.form-control(type='text', name="email", placeholder='Email Address', required)
-                    br
-                    textarea.form-control(type='textarea', name="message", placeholder='Your Message...', required)
-                    br
-                    button.btn.btn-danger(type='submit') Send Message!
+              a(href="mailto:colingillingham@gmail.com", target="_blank") colingillingham@gmail.com
+              //- .row
+              //-   .col-md-12
+              //-     form(action="/", method="post")
+              //-       input.form-control(type='text', name="email", placeholder='Email Address', required)
+              //-       br
+              //-       textarea.form-control(type='textarea', name="message", placeholder='Your Message...', required)
+              //-       br
+              //-       button.btn.btn-danger(type='submit') Send Message!
     footer
       .container
         .row
