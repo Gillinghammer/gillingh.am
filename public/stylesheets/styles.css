@@ -6,6 +6,9 @@ h1, h2, h3, h4, h5, h6
 {
     font-family: 'Roboto Slab', serif;
     color: rgba(0,0,0,0.6);
+}
+
+.drop {
     text-shadow: 2px 0px 6px rgba(0,0,0,0.4),
     0px -5px 35px rgba(255,255,255,0.3);
 }
@@ -212,7 +215,7 @@ footer p
 .cornerTitle {
     color: white;
 }
-.clients img {
+img.clients {
     margin: 0 auto;
     max-height: 130px;
     max-width: 250px;

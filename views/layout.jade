@@ -41,81 +41,91 @@ html(lang='en')
           .row
             .col-md-3.col-xs-10
               a.thumbnail.logo(href='#')
-                //- img.img-responsive(src='images/Colin.png', alt='')
-                h5.cornerTitle Colin Gillingham
           .jumbotron
-            h1
+            h1.drop
               strong Colin Gillingham
               br
-              small startup consultant
-            p.small-hide
-              | After seven years working in Silicon Valley, for innovative startups like Tesla, I've moved to Europe to lend my skills to companies solving interesting problems here.
-  section.clients.wow.fadeInUp(data-wow-delay='300ms')
-    .container
-      .row
-        .col-md-3
-          img.img-responsive.tesla(src='/images/tesla2.png')
-        .col-md-3
-          img.img-responsive.wirewax(src='/images/wirewax.jpg')
-        .col-md-3
-          img.img-responsive(src='/images/proleads.gif')
-        .col-md-3
-          img.img-responsive(src='/images/generalassembly.png')
-        .col-md-12
-          p.text-center 
-            a(target="blank", href="https://docs.google.com/document/d/15ZGG3uAaVv8O60cp0LJFtpToyQYCJSdka3OXl117xSY/edit?usp=sharing") download my resume / cv
-    section#feat
+              small.drop startup consultant
+            //- p.small-hide
+            //-   | After seven years working in Silicon Valley, for innovative startups like Tesla, I've moved to Europe to lend my skills to companies solving interesting problems here.
+    section.clients.wow.fadeInUp(data-wow-delay='300ms')
       .container
-        .row.features
-          .col-md-4.text-center.wow.fadeInUp(data-wow-delay='100ms')
-            span.typcn.typcn-chart-line.x4
-            h4 CRM Management
+        .row
+          .col-md-3
+            img.img-responsive.tesla(src='/images/tesla2.png')
+          .col-md-3
+            img.img-responsive.wirewax(src='/images/wirewax.jpg')
+          .col-md-3
+            img.img-responsive(src='/images/proleads.gif')
+          .col-md-3
+            img.img-responsive(src='/images/generalassembly.png')
+          .col-md-12
+            p.text-center 
+              a(target="blank", href="https://docs.google.com/document/d/15ZGG3uAaVv8O60cp0LJFtpToyQYCJSdka3OXl117xSY/edit?usp=sharing") download my resume / cv
+    section#news.blog.wow.fadeInUp(data-wow-delay='300ms')
+      .container
+        .row
+          .col-md-7
+            h2 Ol&aacute; Startups!
             p
-              | Selecting the right CRM software to use at your startup is essential for your teams to be successful. Once we've implemented this, I'll help you determine your business's KPI's and visualize them via dashboards and automated reports.
-          .col-md-4.text-center.wow.fadeInUp(data-wow-delay='300ms')
-            span.typcn.typcn-tags.x4
-            h4 Sales Automation
+              | I'm from Wisconsin originally but spent over seven years working in Silicon Valley, most notably for Tesla as it grew from 200 employees to over 5,000. It was a tremendous opportunity and I learned a ton about optimizing our internal tools to keep up with the pace set by our fearless leader, Elon Musk.
             p
-              | Target your leads with extremely personalized communications allowing a very small or even non-existent sales team to close more deals and setup important meetings with prospects. 
-          .col-md-4.text-center.wow.fadeInUp(data-wow-delay='500ms')
-            span.typcn.typcn-news.x4
-            h4 Marketing Automation
+              | Since then I took the opportunity to travel, learn how to code and recharge my own batteries ;) I just finished living in London for two years, while being a Product & Engineering Manager for a Computer Vision startup there. Now I've landed in Portugal hoping to get plugged into the thriving startup scene. 
+            br
+            a.btn.btn-danger.btn-lg(href='#contact')
+              | Get In Touch! 
+              i.fa.fa-arrow-circle-o-right
+          br
+          .col-md-5
+            a(href='#')
+              img.img-responsive(src='/images/colintiles.jpg', alt='')
+        
+    //- section#feat
+    //-   .container
+    //-     .row.features
+    //-       .col-md-4.text-center.wow.fadeInUp(data-wow-delay='100ms')
+    //-         span.typcn.typcn-chart-line.x4
+    //-         h4 CRM Management
+    //-         p
+    //-           | Selecting the right CRM software to use at your startup is essential for your teams to be successful. Once we've implemented this, I'll help you determine your business's KPI's and visualize them via dashboards and automated reports.
+    //-       .col-md-4.text-center.wow.fadeInUp(data-wow-delay='300ms')
+    //-         span.typcn.typcn-tags.x4
+    //-         h4 Sales Automation
+    //-         p
+    //-           | Target your leads with extremely personalized communications allowing a very small or even non-existent sales team to close more deals and setup important meetings with prospects. 
+    //-       .col-md-4.text-center.wow.fadeInUp(data-wow-delay='500ms')
+    //-         span.typcn.typcn-news.x4
+    //-         h4 Marketing Automation
+    //-         p
+    //-           | Keep leads warm and tip prospects over the edge with timely communications when certain behaviors in your site or app are identified. Keep your newsletters timely and personlized making your company seem larger than it is.
+    section#contact.prefooter.wow.fadeInUp(data-wow-delay='300ms')
+      // change the image in style.css to the class .prefooter .container-fluid [approximately row 154]
+      .container-fluid
+        .container
+          .row
+            .col-md-8
+              h3
+                | Offering Free Advice in Lisboa
+              p
+                | Send me a message if you'd like to learn more over coffee or a beer.
+              .row
+                .col-md-12
+                  form(action="/", method="post")
+                    input.form-control(type='text', name="email", placeholder='Email Address', required)
+                    br
+                    textarea.form-control(type='textarea', name="message", placeholder='Your Message...', required)
+                    br
+                    button.btn.btn-danger(type='submit') Send Message
+    footer
+      .container
+        .row
+          .col-md-8
+            h3 Colin Gillingham
             p
-              | Keep leads warm and tip prospects over the edge with timely communications when certain behaviors in your site or app are identified. Keep your newsletters timely and personlized making your company seem larger than it is.
-    //- section#contact.prefooter.wow.fadeInUp(data-wow-delay='300ms')
-    //-   // change the image in style.css to the class .prefooter .container-fluid [approximately row 154]
-    //-   .container-fluid
-    //-     .container
-    //-       .row
-    //-         .col-md-8
-    //-           h3
-    //-             | Offering Free Advice in Lisboa
-    //-           p
-    //-             | My main objective right now is networking and getting the lay of the land.
-    //-             | Send me a message if you'd like to meet for an interesting chat over coffee or beer!
-    //-           .row
-    //-             .col-md-12
-    //-               input.form-control(type='text', placeholder='Email Address')
-    //-               br
-    //-               textarea.form-control(type='textarea', placeholder='Your Message...')
-    //-               br
-    //-               button.btn.btn-danger(type='button') Send Message
-//- doctype html
-//- html
-//-   head
-//-     title Colin Gillingham: Product, Developer & Sales and Marketing
-//-     // Latest compiled and minified CSS
-//-     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
-//-     // Optional theme
-//-     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css', integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp', crossorigin='anonymous')
-//-     // Latest compiled and minified JavaScript
-//-     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
-//-     link(rel='stylesheet', href='/stylesheets/style.css')
-//-     meta(name='viewport', content='width=device-width, initial-scale=1')
-//-   body
-//-     header
-//-     .container
-//-         block content
-//-     script(src="https://code.jquery.com/jquery-3.1.1.min.js", integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=", crossorigin="anonymous")
-//-     script(src='/javascripts/materialize.min.js')
-//-     script(src='/javascripts/main.js')
+              | © 2017 Gillingham. Designed and Developed by Me
+          .col-md-4
+            p.text-right.social
+              a(href='https://www.linkedin.com/in/colingillingham', target='_blank')
+                i.typcn.typcn-social-linkedin-circular
+              a(href='http://github.com/gillinghammer', target='_blank')
+                i.typcn.typcn-social-github-circular
