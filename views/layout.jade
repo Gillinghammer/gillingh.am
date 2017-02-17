@@ -20,21 +20,11 @@ html(lang='en')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
     link(rel='stylesheet', href='assets/css/pushy.css')
-    link(rel='stylesheet', href='assets/css/masonry.css')
     link(rel='stylesheet', href='assets/css/animate.css')
-    link(rel='stylesheet', href='assets/css/magnific-popup.css')
-    link(rel='stylesheet', href='assets/css/odometer-theme-default.css')
-    script.
-      window.odometerOptions = {
-      selector: '.odometer',
-      format: '(,ddd)', // Change how digit groups are formatted, and how many digits are shown after the decimal point
-      duration: 13000, // Change how long the javascript expects the CSS animation to take
-      theme: 'default'
-      };
   body
     // Site Overlay
     .site-overlay
-    header#home
+    header#home.wow.fadeIn
       .container-fluid
         // change the image in style.css to the class header .container-fluid [approximately row 50]
         .container
@@ -46,9 +36,13 @@ html(lang='en')
               strong Colin Gillingham
               br
               small.drop startup consultant
-            //- p.small-hide
-            //-   | After seven years working in Silicon Valley, for innovative startups like Tesla, I've moved to Europe to lend my skills to companies solving interesting problems here.
-    section.clients.wow.fadeInUp(data-wow-delay='300ms')
+            blockquote.small-hide
+              | "Imagination is more important than knowledge" Albert Einstein
+            br
+            a.btn.btn-danger.btn-lg(href='#clients')
+              | Learn More 
+              i.fa.fa-arrow-circle-o-down
+    section#clients.clients.wow.fadeInUp(data-wow-delay='300ms')
       .container
         .row
           .col-md-3
@@ -60,8 +54,9 @@ html(lang='en')
           .col-md-3
             img.img-responsive(src='/images/generalassembly.png')
           .col-md-12
-            p.text-center 
-              a(target="blank", href="https://docs.google.com/document/d/15ZGG3uAaVv8O60cp0LJFtpToyQYCJSdka3OXl117xSY/edit?usp=sharing") download my resume / cv
+            br
+            h5.text-center 
+              a(target="blank", href="https://docs.google.com/document/d/15ZGG3uAaVv8O60cp0LJFtpToyQYCJSdka3OXl117xSY/edit?usp=sharing") View My Resume / CV
     section#news.blog.wow.fadeInUp(data-wow-delay='300ms')
       .container
         .row
@@ -79,31 +74,12 @@ html(lang='en')
           .col-md-5
             a(href='#')
               img.img-responsive(src='/images/colintiles.jpg', alt='')
-        
-    //- section#feat
-    //-   .container
-    //-     .row.features
-    //-       .col-md-4.text-center.wow.fadeInUp(data-wow-delay='100ms')
-    //-         span.typcn.typcn-chart-line.x4
-    //-         h4 CRM Management
-    //-         p
-    //-           | Selecting the right CRM software to use at your startup is essential for your teams to be successful. Once we've implemented this, I'll help you determine your business's KPI's and visualize them via dashboards and automated reports.
-    //-       .col-md-4.text-center.wow.fadeInUp(data-wow-delay='300ms')
-    //-         span.typcn.typcn-tags.x4
-    //-         h4 Sales Automation
-    //-         p
-    //-           | Target your leads with extremely personalized communications allowing a very small or even non-existent sales team to close more deals and setup important meetings with prospects. 
-    //-       .col-md-4.text-center.wow.fadeInUp(data-wow-delay='500ms')
-    //-         span.typcn.typcn-news.x4
-    //-         h4 Marketing Automation
-    //-         p
-    //-           | Keep leads warm and tip prospects over the edge with timely communications when certain behaviors in your site or app are identified. Keep your newsletters timely and personlized making your company seem larger than it is.
     section#contact.prefooter.wow.fadeInUp(data-wow-delay='300ms')
       // change the image in style.css to the class .prefooter .container-fluid [approximately row 154]
       .container-fluid
         .container
           .row
-            .col-md-12
+            .col-md-12.nopadding
               iframe#typeform-full(width='100%', height="400px", frameborder='0', src='https://gillinghammer.typeform.com/to/UXrq4f')
                   script(type='text/javascript', src='https://s3-eu-west-1.amazonaws.com/share.typeform.com/embed.js')
     footer
@@ -119,3 +95,14 @@ html(lang='en')
                 i.typcn.typcn-social-linkedin-circular
               a(href='http://github.com/gillinghammer', target='_blank')
                 i.typcn.typcn-social-github-circular
+  //
+    Bootstrap core JavaScript
+    ==================================================
+  // Placed at the end of the document so the pages load faster
+  script(src='assets/js/jquery.min.js')
+  script(src='bootstrap/js/bootstrap.min.js')
+  script(src='https://netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/js/bootstrap-scrollspy.js')
+  // IE10 viewport hack for Surface/desktop Windows 8 bug
+  script(src='assets/js/ie10-viewport-bug-workaround.js')
+  script(src='assets/js/wow.min.js')
+  script(src='assets/js/scripts.js')
