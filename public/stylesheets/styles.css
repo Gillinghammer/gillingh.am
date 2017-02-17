@@ -9,8 +9,8 @@ h1, h2, h3, h4, h5, h6
 }
 
 .drop {
-    text-shadow: 2px 0px 6px rgba(0,0,0,0.4),
-    0px -5px 35px rgba(255,255,255,0.3);
+    font-weight:900;
+    text-shadow: 0px 0px 3px #000;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -55,7 +55,7 @@ span.x4:before, i.x4:before
 
 header .container-fluid
 {
-    background-image: url('../images/iceland.jpg');
+    background-image: url('../images/lisbon.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 75vh;
@@ -74,6 +74,19 @@ header .container-fluid
   cursor: pointer;
 }
 
+#resume {
+    text-align: center;
+    display: block;
+}
+
+a.btn {
+    font-size: 1.25em;
+}
+
+i.fa {
+    font-size: 1.2em;
+    padding-right: 10px;
+}
 
 .logo
 {
@@ -95,7 +108,7 @@ header .container-fluid
 .jumbotron h6,
 .jumbotron small
 {
-    color: #222;
+    color: #FFF;
 }
 
 .jumbotron p
@@ -252,5 +265,10 @@ blockquote {
     }
     p {
         text-align: left;
+        margin: 0 20px;
     }
+    /*header .container-fluid
+    {
+        height: 60vh;
+    }*/
 }

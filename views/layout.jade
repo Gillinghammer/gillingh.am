@@ -31,7 +31,7 @@ html(lang='en')
             strong Colin Gillingham
             br
             small.drop startup consultant
-          a.btn.btn-primary.btn-lg(href='#clients')
+          a.btn.btn-default.btn-lg(href='#clients')
             | Learn More 
             i.fa.fa-arrow-circle-o-down
     section#clients.clients.wow.fadeInUp(data-wow-delay='300ms')
@@ -47,17 +47,20 @@ html(lang='en')
             img.img-responsive(src='/images/generalassembly.png')
           .col-md-12
             br
-            h5.text-center 
-              a(target="blank", href="https://docs.google.com/document/d/15ZGG3uAaVv8O60cp0LJFtpToyQYCJSdka3OXl117xSY/edit?usp=sharing") View My Resume / CV
+            //- h5.text-center 
+            //-   a(target="blank", href="https://docs.google.com/document/d/15ZGG3uAaVv8O60cp0LJFtpToyQYCJSdka3OXl117xSY/edit?usp=sharing") View My Resume / CV
+            a#resume.btn.btn-default.btn-lg(href="https://docs.google.com/document/d/15ZGG3uAaVv8O60cp0LJFtpToyQYCJSdka3OXl117xSY/edit?usp=sharing")
+              | View Resume 
+              i.fa.fa-file-text-o
     section#news.blog.wow.fadeInUp(data-wow-delay='300ms')
       .container
         .row
           .col-md-7
             h2 Ol&aacute; Startups!
             p
-              | I'm from Wisconsin originally but spent over seven years working in Silicon Valley, most notably for Tesla as it grew from 200 employees to over 5,000. It was a tremendous opportunity and I learned a ton about optimizing our internal tools to keep up with the pace set by our fearless leader, Elon Musk.
+              | Originally from Wisconsin and spent over seven years working in Silicon Valley, most notably for Tesla as it grew from 200 employees to over 5,000. It was a tremendous opportunity and I learned a ton about optimizing our internal tools to keep up with the pace set by our fearless leader, Elon Musk.
             p
-              | Since then I took the opportunity to travel, learn how to code and recharge my own batteries ;) I just finished living in London for two years, while being a Product & Engineering Manager for a Computer Vision startup there. Now I've landed in Portugal hoping to get plugged into the thriving startup scene. 
+              | Since then I took the opportunity to travel, learn how to code and recharge my own batteries ;) I just finished living in London for two years working as a Product & Engineering Manager for a Computer Vision startup. Now I've landed in Portugal hoping to get plugged into the thriving startup scene. 
             br
             a.btn.btn-primary.btn-lg(href='#contact')
               | Get In Touch! 
@@ -67,10 +70,11 @@ html(lang='en')
             a(href='#')
               img.img-responsive(src='/images/colintiles.jpg', alt='')
     section#contact.prefooter.wow.fadeInUp(data-wow-delay='300ms')
-      .row
-        .col-md-12.nopadding
-          iframe#typeform-full(width='100%', height="400px", frameborder='0', src='https://gillinghammer.typeform.com/to/UXrq4f')
-              script(type='text/javascript', src='https://s3-eu-west-1.amazonaws.com/share.typeform.com/embed.js')
+      .container-fluid
+        .row
+          .col-md-12
+            iframe#typeform-full(width='100%', height="400px", frameborder='0', src='https://gillinghammer.typeform.com/to/UXrq4f')
+                script(type='text/javascript', src='https://s3-eu-west-1.amazonaws.com/share.typeform.com/embed.js')
     footer
       .container
         .row
@@ -81,9 +85,13 @@ html(lang='en')
           .col-md-4
             p.text-right.social
               a(href='https://www.linkedin.com/in/colingillingham', target='_blank')
-                i.typcn.typcn-social-linkedin-circular
+                i.fa.fa-linkedin-square
+              a(href='https://angel.co/gillinghammer', target='_blank')
+                i.fa.fa-angellist
               a(href='http://github.com/gillinghammer', target='_blank')
-                i.typcn.typcn-social-github-circular
+                i.fa.fa-github-square
+              a(href='http://twitter.com/gillinghammer', target='_blank')
+                i.fa.fa-twitter-square
   //
     Bootstrap core JavaScript
     ==================================================
