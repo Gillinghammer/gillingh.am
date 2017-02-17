@@ -5,7 +5,7 @@
 h1, h2, h3, h4, h5, h6
 {
     font-family: 'Roboto Slab', serif;
-    color: rgba(0,0,0,0.6);
+    color: #222;
 }
 
 .drop {
@@ -55,10 +55,10 @@ span.x4:before, i.x4:before
 
 header .container-fluid
 {
-    background-image: url('../images/patagonia.jpg');
+    background-image: url('../images/iceland.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 75vh;
     padding-top: 36px;
 }
 
@@ -95,7 +95,7 @@ header .container-fluid
 .jumbotron h6,
 .jumbotron small
 {
-    color: #FFFFFF;
+    color: #222;
 }
 
 .jumbotron p
