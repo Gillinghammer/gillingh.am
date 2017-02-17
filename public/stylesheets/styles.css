@@ -230,6 +230,12 @@ img.wirewax {
     padding-top: 10px;
 }
 
+iframe#typeform_full {
+    display: inline-block;
+    min-height: 600px;
+    margin: 60px;
+}
+
 @media all and (max-width: 700px) {
     .small-hide {
         display: none;
