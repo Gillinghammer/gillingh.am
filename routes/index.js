@@ -1,4 +1,3 @@
-var nodemailer = require('nodemailer');
 var express = require('express');
 var router = express.Router();
 
@@ -6,7 +5,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { foo: 'bar' });
+  res.render('index');
 });
 
 module.exports = router;

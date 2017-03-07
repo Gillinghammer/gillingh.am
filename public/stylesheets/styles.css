@@ -4,8 +4,12 @@
 
 h1, h2, h3, h4, h5, h6
 {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Open Sans', serif;
     color: #222;
+}
+
+.typcn {
+    color: #36c4c5
 }
 
 .drop {
@@ -158,7 +162,7 @@ i.fa {
 
 .boxes .odometer.odometer-theme-default
 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Open Sans', serif;
 }
 
 .story .container-fluid
