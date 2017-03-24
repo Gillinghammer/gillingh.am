@@ -5,11 +5,15 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var minify = require('express-minify');
 
 var routes = require('./routes/index');
 
 var app = express();
+// added gzip compression
 app.use(compression());
+// minify my files
+app.use(minify());
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
