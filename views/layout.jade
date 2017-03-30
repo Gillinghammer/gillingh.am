@@ -23,105 +23,27 @@ html(lang='en')
     link(rel='stylesheet', href='assets/css/pushy.css')
     link(rel='stylesheet', href='assets/css/animate.css')
   body
-    // Site Overlay
-    .site-overlay
-    header#home.wow.fadeIn
-      .container-fluid
-        .row
-          a.btn.btn-danger(href='http://blog.gillingh.am').pull-right
-            | Read My Blog 
-            i.fa.fa-i-cursor
-        .jumbotron
-          h1
-            strong Colin Gillingham
-            br
-            small startup nomad
-          a.btn.btn-default.btn-lg(href='#clients')
-            | Learn More 
-            i.fa.fa-arrow-circle-o-down
-    section#clients.clients.wow.fadeInUp(data-wow-delay='300ms')
-      .container
-        .row
-          .col-md-3
-            img.img-responsive.tesla(src='/images/tesla2.png')
-          .col-md-3
-            img.img-responsive.wirewax(src='/images/wirewax.jpg')
-          .col-md-3
-            img.img-responsive(src='/images/proleads.gif')
-          .col-md-3
-            img.img-responsive(src='/images/generalassembly.png')
-          .col-md-12
-            br
-            a#resume.btn.btn-default.btn-lg(href="https://docs.google.com/document/d/15ZGG3uAaVv8O60cp0LJFtpToyQYCJSdka3OXl117xSY/edit?usp=sharing")
-              | View Resume 
-              i.fa.fa-file-text-o
-    section#news.blog.wow.fadeInUp(data-wow-delay='300ms')
-      .container
-        .row
-          .col-md-7
-            h2 Ol&aacute; Startups!
-            p
-              | I consider myself a bit of a startup nomad these days. Originally from Wisconsin in the US but spent over seven years working in California. The highlight was my time as an early employee at Tesla, spending nearly 6 years building solutions for Sales and Marketing. It was an opportunity of a lifetime and I learned a ton about optimizing our internal tools to keep up with the pace set by our founder & CEO, Elon Musk.
-            p
-              | Since then I took the opportunity to travel, learn how to code and recharge my own batteries ;) I just finished living in London for two years working as a Product & Engineering Manager for a Computer Vision startup. Now I've landed in Portugal hoping to get plugged into the thriving startup scene. 
-            br
-            a.btn.btn-primary.btn-lg(href='#contact')
-              | Get In Touch! 
-              i.fa.fa-arrow-circle-o-down
-          br
-          .col-md-5
-            a(href='#')
-              img.img-responsive(src='/images/colintiles.jpg', alt='')
-    section#feat
-      .container
-        .row
-          .col-md-12
-            br
-            h3.text-center Read my blog for lessons learned while working in Silicon Valley and Europe's burgeoning startup scene.
-            a#resume.btn.btn-warning.btn-lg(href="http://blog.gillingh.am/")
-              | Read My Blog Now 
-              i.fa.fa-i-cursor
-        .row.features
-          .col-md-4.text-center.wow.fadeInUp(data-wow-delay='100ms')
-            span.typcn.typcn-contacts.x3
-            h4 CRM Implementation
-            p
-              | SalesForce.com was my bread & butter while I worked at Tesla. The sign of a nicely working CRM is one which requires little input from you and your team. I can help you select the right CRM for your needs and budget.
-          .col-md-4.text-center.wow.fadeInUp(data-wow-delay='300ms')
-            span.typcn.typcn-flow-merge.x3
-            h4 Automate Business Process
-            p
-              | I can help automate the manual workflows in your organization. From offloading customer support tasks, generating daily metrics reports, or keeping your teams on the same page I have experience automating solutions like these.
-          .col-md-4.text-center.wow.fadeInUp(data-wow-delay='500ms')
-            span.typcn.typcn-news.x3
-            h4 Email Marketing
-            p
-              | Want to send targeted emails to your leads based on their website activity? I've worked with simple and complex email marketing systems like Eloqua, ExactTarget, and MailChimp. Learn from your open rates and inbox score.
-    section#contact.prefooter.wow.fadeInUp(data-wow-delay='300ms')
-      .container-fluid
-        .row
-          .col-md-12
-            iframe#typeform-full(width='100%', height="400px", frameborder='0', src='https://gillinghammer.typeform.com/to/UXrq4f')
-                script(type='text/javascript', src='https://s3-eu-west-1.amazonaws.com/share.typeform.com/embed.js')
-    footer
-      .container
-        .row
-          .col-md-8
-            h3 Colin Gillingham
-            p
-              | © 2017 Gillingham. Express App hosted on Heroku
-          .col-md-4
-            p.text-right.social
-              a(href='mailto:colin@gillingh.am', target='_blank')
-                i.fa.fa-envelope
-              a(href='https://www.linkedin.com/in/colingillingham', target='_blank')
-                i.fa.fa-linkedin-square
-              a(href='https://angel.co/gillinghammer', target='_blank')
-                i.fa.fa-angellist
-              a(href='http://github.com/gillinghammer', target='_blank')
-                i.fa.fa-github-square
-              a(href='http://twitter.com/gillinghammer', target='_blank')
-                i.fa.fa-twitter-square
+    block content
+    block foot
+      footer
+        .container
+          .row
+            .col-md-8
+              h3 Colin Gillingham
+              p
+                | © 2017 Gillingham. Express App hosted on Heroku
+            .col-md-4
+              p.text-right.social
+                a(href='mailto:colin@gillingh.am', target='_blank')
+                  i.fa.fa-envelope
+                a(href='https://www.linkedin.com/in/colingillingham', target='_blank')
+                  i.fa.fa-linkedin-square
+                a(href='https://angel.co/gillinghammer', target='_blank')
+                  i.fa.fa-angellist
+                a(href='http://github.com/gillinghammer', target='_blank')
+                  i.fa.fa-github-square
+                a(href='http://twitter.com/gillinghammer', target='_blank')
+                  i.fa.fa-twitter-square
   //
     Bootstrap core JavaScript
     ==================================================
